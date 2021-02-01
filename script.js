@@ -1,12 +1,13 @@
 "use stict";
 
 const allSlides = document.querySelectorAll(".slider__slide");
-const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
+const btnLeft = document.querySelector(".slider__btn--left");
 
 let curSlide = 0;
 const maxSlides = allSlides.length;
 
+//Slide change functionality - translate values
 const changeSlide = function (slide) {
   allSlides.forEach(
     (s, i) => (s.style.transform = `translateX(${(i - slide) * 100}%)`)
@@ -15,6 +16,7 @@ const changeSlide = function (slide) {
 
 changeSlide(0);
 
+//Next slide
 const nextSlide = function () {
   if (curSlide < maxSlides - 1) {
     curSlide++;
@@ -24,6 +26,7 @@ const nextSlide = function () {
   changeSlide(curSlide);
 };
 
+//Previous slide
 const previousSlide = function () {
   if (curSlide !== 0) {
     curSlide--;
@@ -33,13 +36,13 @@ const previousSlide = function () {
   changeSlide(curSlide);
 };
 
-btnLeft.addEventListener("click", nextSlide);
-btnRight.addEventListener("click", previousSlide);
+//Click buttons event listener
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", previousSlide);
 
-//Previous slide
-// btnRight.addEventListener("click", function () {
-//   if (curSlide < maxSlides - 1) curSlide--;
-//   allSlides.forEach(function (slide, i) {
-//     slide.style.transform = `translateX(${(i - curSlide) * 100}%)`;
-//   });
-// });
+//keypress event listener
+document.addEventListener("keydown", function (e) {
+  //   console.log(e);
+  if (e.keyCode === 39) nextSlide();
+  if (e.keyCode === 37) previousSlide();
+});
