@@ -1,0 +1,23 @@
+{
+  "name": "slider-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PascaleStark/slider-component.git"
+  },
+  "author": "PS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PascaleStark/slider-component/issues"
+  },
+  "homepage": "https://github.com/PascaleStark/slider-component#readme"
+}

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+  color: #1e1b1b;
+  background-color: #f6f6f6; }
+
+.header {
+  padding: 3rem 5rem;
+  width: 100%;
+  border-bottom: 2px solid #8d8181;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.heading--1 {
+  display: inline-block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  background-image: linear-gradient(to top left, #379124, #a6e199);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.section {
+  padding: 3rem 8rem; }
+
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 5rem auto;
+  position: relative;
+  box-shadow: 1rem 1rem 30px gray;
+  overflow: hidden; }
+  .slider__slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s; }
+    .slider__slide img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .slider__btn {
+    position: absolute;
+    top: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: #1e1b1b;
+    opacity: 0.8;
+    border: none;
+    border-radius: 100%;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    outline: none; }
+    .slider__btn--left {
+      left: 5%; }
+    .slider__btn--right {
+      right: 5%; }
