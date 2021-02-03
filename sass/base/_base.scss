@@ -6,6 +6,16 @@
 
 html {
   font-size: 62.5%;
+
+  @include media-respond(tab-port) {
+    font-size: 50%;
+  }
+  @include media-respond(phone) {
+    font-size: 37.5%;
+  }
+  @include media-respond(big-scrn) {
+    font-size: 100%;
+  }
 }
 
 body {
