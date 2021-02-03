@@ -50,4 +50,23 @@
       right: 3%;
     }
   }
+  &__squares-box {
+    margin: -3rem auto;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__square {
+    margin: 0 auto;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $color-grey-medium;
+    cursor: pointer;
+
+    &--active {
+      background-color: $color-grey-dark;
+    }
+  }
 }

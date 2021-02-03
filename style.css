@@ -78,6 +78,20 @@ body {
       left: 3%; }
     .slider__btn--right {
       right: 3%; }
+  .slider__squares-box {
+    margin: -3rem auto;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .slider__square {
+    margin: 0 auto;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #8d8181;
+    cursor: pointer; }
+    .slider__square--active {
+      background-color: #1e1b1b; }
 
 .header {
   padding: 3rem 5rem; }
