@@ -4,17 +4,17 @@
       @content;
     }
   }
-  @if ($breakpoint == tab-port) {
-    @media (max-width: 56.25) {
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
       @content;
     }
   }
-  @if ($breakpoint == tab-land) {
+  @if $breakpoint == tab-land {
     @media (max-width: 75em) {
       @content;
     }
   }
-  @if ($breakpoint == big-scrn) {
+  @if $breakpoint == big-scrn {
     @media (min-width: 112.5em) {
       @content;
     }

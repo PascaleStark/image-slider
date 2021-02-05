@@ -5,22 +5,22 @@
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 56.25) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 37.5%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 100%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 2rem; }
+  @media (max-width: 75em) {
+    body {
+      padding: 1rem; } }
 
 body {
   font-family: "Courier New", Courier, monospace;
-  font-weight: 200;
   color: #1e1b1b;
   background-color: #f6f6f6; }
 
@@ -38,6 +38,12 @@ body {
   background-image: linear-gradient(to top left, #379124, #a6e199);
   -webkit-background-clip: text;
   color: transparent; }
+  @media (max-width: 56.25em) {
+    .heading--1 {
+      font-size: 2.8rem; } }
+  @media (max-width: 37.5em) {
+    .heading--1 {
+      font-size: 2.5rem; } }
 
 .section {
   padding: 3rem 8rem; }
@@ -49,6 +55,9 @@ body {
   position: relative;
   box-shadow: 1rem 1rem 30px gray;
   overflow: hidden; }
+  @media (max-width: 37.5em) {
+    .slider {
+      height: 40rem; } }
   .slider__slide {
     position: absolute;
     top: 0;
@@ -84,6 +93,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .slider__squares-box {
+        width: 15%; } }
+    @media (max-width: 37.5em) {
+      .slider__squares-box {
+        width: 25%; } }
   .slider__square {
     margin: 0 auto;
     width: 0.8rem;

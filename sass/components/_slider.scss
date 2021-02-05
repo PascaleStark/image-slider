@@ -8,6 +8,10 @@
   //in order for the shifted containers left and right to disappear
   overflow: hidden;
 
+  @include media-respond(phone) {
+    height: 40rem;
+  }
+
   &__slide {
     position: absolute;
     top: 0;
@@ -56,6 +60,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-respond(tab-port) {
+      width: 15%;
+    }
+    @include media-respond(phone) {
+      width: 25%;
+    }
   }
 
   &__square {

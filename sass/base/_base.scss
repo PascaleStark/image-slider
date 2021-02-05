@@ -10,9 +10,6 @@ html {
   @include media-respond(tab-port) {
     font-size: 50%;
   }
-  @include media-respond(phone) {
-    font-size: 37.5%;
-  }
   @include media-respond(big-scrn) {
     font-size: 100%;
   }
@@ -20,4 +17,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 2rem;
+
+  @include media-respond(tab-land) {
+    padding: 1rem;
+  }
 }
