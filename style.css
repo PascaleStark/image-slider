@@ -8,6 +8,9 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 100%; } }
@@ -18,6 +21,9 @@ body {
   @media (max-width: 75em) {
     body {
       padding: 1rem; } }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Courier New", Courier, monospace;
@@ -91,7 +97,7 @@ body {
     margin: -3rem auto;
     width: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
     @media (max-width: 56.25em) {
       .slider__squares-box {

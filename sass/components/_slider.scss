@@ -58,7 +58,7 @@
     margin: -3rem auto;
     width: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @include media-respond(tab-port) {
