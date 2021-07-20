@@ -1,6 +1,6 @@
 # image-slider
 
-This is a small image slider project that uses HTML5, Sass and JS.
+This is a small image slider project that uses HTML5, CSS/Sass and JS.
 
 # Setup
 
